@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwagan</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Vishwagan Logo" />
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#members">Members</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <div class="hero" id="home">
+      <div class="child">
+        <p class="welcome">Welcome to Vishwagan</p>
+        <p class="haha">
+          Your success is <br />
+          our priority
+        </p>
+        <p class="tagline">Innovating with Wisdom, Creating with Excellence.</p>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h2 class="ab">About Vishwagan</h2>
+      <div class="about-content">
+        <p class="abtext">
+          Inspired by Vishwakarma, the divine architect, and Karunungan, the
+          essence of wisdom, Vishwagan is a student-led startup driven by
+          innovation and expertise. We merge creativity with technology to
+          develop smart, impactful solutions, shaping a future where knowledge
+          and craftsmanship build a better world.
+        </p>
+      </div>
+    </div>
+
+    <div class="absec">
+      <div class="abchild">
+        <p class="t">SMALL BUT MIGHTY</p>
+      </div>
+    </div>
+
+    <div data-aos="fade-right" class="members" id="members">
+      <h2>Our Members</h2>
+      <div class="member-container">
+        <div class="member">
+          <img src="1.jpg" alt="Jessica Flores" />
+          <p>Jessica Flores</p>
+          <p class="role">Data Analyst</p>
+        </div>
+        <div class="member">
+          <img src="2.jpg" alt="Kenrich Ed Amar" />
+          <p>Kenrich Ed Amar</p>
+          <p class="role">Marketing Director</p>
+        </div>
+        <div class="member">
+          <img src="3.jpg" alt="Issha Karel Baltazar" />
+          <p>Issha Karel Baltazar</p>
+          <p class="role">Project Manager</p>
+        </div>
+        <div class="member">
+          <img src="4.jpg" alt="Sherwen Cabanilla" />
+          <p>Sherwen Cabanilla</p>
+          <p class="role">Lead Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <h2>Contact Vishwagan</h2>
+      <p>Email: contact@vishwagan.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
